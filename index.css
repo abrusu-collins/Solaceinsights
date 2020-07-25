@@ -4,8 +4,14 @@
 
 	font-family: 'Roboto', sans-serif;
 }
+html{
+	background-color: #be3e82;
+}
 
-
+#disqus_thread{
+	width:70%;
+	background-color: #be3e82;
+}
 /*tags*/
 nav{
 	background-color: #f56476;
@@ -33,7 +39,7 @@ nav a:hover{
 /*background pic*/
 .pic{
      margin-top:60px;
-	background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.9)),url("second.png");
+	background-image: linear-gradient(rgba(0,0,0,0.76),rgba(0,0,0,0.76)),url("second.png");
 	height: 92vh;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -122,11 +128,20 @@ grid-gap: 1rem;
 background-color: #f56476;
 color: #fcfeff;
 font-size: 20px;
-padding: 20px 0;
+padding: 10px 0;
 text-align: center;
 
 }
-
+.footer .social{
+ 
+	font-size: 30px;
+}
+.social a{
+	color: #fcfeff;
+}
+.social a:hover{
+	color: #dfbbb1; 
+}
 @media(max-width: 650px){
 
 
@@ -138,5 +153,7 @@ text-align: center;
 }
 .pic{
 	background-size: contain;
+	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("second.png");
+	height: 80vh;
 }
 }	

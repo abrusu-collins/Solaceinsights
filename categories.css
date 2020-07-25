@@ -1,0 +1,117 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: 'Roboto', sans-serif;
+}
+/*Tags*/
+body{
+	background-color: #be3e82;
+}
+nav{
+	background-color: #f56476;
+	text-align: center;
+       padding:20px 0;
+       position: fixed;
+       top:0;
+       width:100%;
+       z-index: 1;
+}
+nav ul li{
+	display: inline;
+	font-size: 20px;
+	padding: 30px;
+	
+}
+nav a{
+	text-decoration: none;
+	color: #fcfeff;
+}
+nav a:hover{
+	color: #dfbbb1;
+}
+
+/*Buttons*/
+
+.buttons{
+
+	margin-top: 10rem;
+	display: grid;
+	grid-gap: 3rem;
+	font-size: 20px;
+	
+}
+
+.buttons a{
+	text-decoration: none;
+	color: #fcfeff;
+}
+
+.buttons a:hover{
+	color: #dfbbb1;
+}
+#b1{
+
+
+	padding: 14px 90px;
+	border:2px solid #dfbbb1;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+#b2{
+
+
+	padding: 14px 107px;
+	border:2px solid #dfbbb1;
+	
+}
+
+#b3{
+
+
+	padding: 14px 102px;
+	border:2px solid #dfbbb1;
+	
+}
+
+#b4{
+
+
+	padding: 14px 63.5px;
+	border:2px solid #dfbbb1;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+@media(max-width: 360px){
+	.buttons{
+		
+		
+	}
+
+#b1{
+	 padding: 14px 50px;
+}
+
+#b2{
+padding: 14px 63.5px;
+
+}
+#b3{
+padding: 14px 55.5px;
+
+}
+
+#b4{
+padding: 14px 23.5px;
+
+}
+
+}
+
+@media(max-width: 266px){
+
+	.buttons{
+		font-size: 12px;
+	}
+}
