@@ -1,10 +1,9 @@
-$('.down').on('click',function(){
-	const BlogPost=$('#three').position().top;
-
-	$('html,body').animate({
-		scrollTop:BlogPost
-	},900);
-});
 
 
+const toggle = document.getElementById('toggle');
+
+const nav = document.getElementById('nav');
+
+toggle.addEventListener('click', () => 
+  nav.classList.toggle('active'));
 
