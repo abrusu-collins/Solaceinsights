@@ -2,10 +2,11 @@
 	margin:0;
 	padding: 0;
 
-	font-family: 'Roboto', sans-serif;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
 html{
-	background-color: #be3e82;
+	background-color: #7EA3CC;
 
 }
 
@@ -16,38 +17,131 @@ img{
 }
 
 /*tags*/
-nav{
-	background-color: #f56476;
-	text-align: center;
-       padding:20px 0;
-       position: fixed;
-       top:0;
-       width:100%;
-       z-index: 1;
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
 }
-nav ul li{
-	display: inline;
-	font-size: 20px;
-	padding: 30px;
-	
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
 }
-nav ul{
-	list-style: none;
+.nav {
+background-color:#fcfeff ;
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+  transition: height .5s ease-in-out;
+  position: fixed;
+  top:0;
+
 }
-nav a{
-	text-decoration: none;
-	color: #fcfeff;
+.nav-brand,.brand, .nav-link, .nav-collapse {
+  display: inline-block;
 }
-nav a:hover{
-	color: #dfbbb1;
+.nav-brand,.brand, .nav-link {
+ 
+
+  text-decoration: none;
+  line-height: 55px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  cursor: pointer;
 }
+.nav-brand,.brand {
+  font-size: 1.25rem;
+   color:rgb(0, 102, 255); ;
+ font-family: 'Balsamiq Sans', cursive;
+}
+.nav-link {
+  font-size: 1rem;
+   color:#000000 ;
+}
+.nav-collapse {
+  float: right;
+}
+.toggler {
+  float: right;
+  width: 40px;
+  height: 18px;
+  margin: 18.5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  opacity: 0.8;
+}
+.toggler span {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background:#868e96;
+  position: relative;
+  transition: .25s ease-in-out;
+}
+.toggler span:nth-child(1) {
+  top: -7.5px;
+}
+.toggler span:nth-child(2) {
+  top: 0;
+}
+.toggler span:nth-child(3) {
+  top: 7.5px;
+}
+
+.nav-brand:hover, .nav-link:hover, .toggler:hover, 
+.nav-brand:focus, .nav-link:focus, .toggler:focus {
+  opacity: 1;
+}
+
+.nav.open .toggler span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.nav.open .toggler span:nth-child(2) {
+  transform: translateX(-100%);
+  width: 0;
+  opacity: 0;
+}
+.nav.open .toggler span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+.nav.open {
+  height: 40vh;
+}
+
+@media (max-width: 767px) {
+  .nav-collapse, .nav-link {
+    float: none;
+    display: block;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .toggler {
+    display: block;
+  }
+}
+
+ nav.scrolled {
+  background: #fcfeff;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+/*end of navbar*/
+
 
 
 /*Post*/
 
 .post{
-color:#f7ccd7;
-	border-bottom: 2px solid #f7ccd7;
+	border: 1px solid rgba(213,216,220,.5);
+	padding: 20px;
+color:#fcfeff;
+	border-radius: 5px;
 	width:55%;
 	margin: 7rem auto;
 	margin-bottom: 3rem;
@@ -56,8 +150,8 @@ color:#f7ccd7;
 	width:100%;
 }
 #post_head{
-	font-size: 1.5rem;
-	font-family: 'Roboto Mono', monospace;
+	font-size: 1.7rem;
+	
 	margin-bottom: 10px;
 text-align: center;
 }
@@ -65,7 +159,7 @@ text-align: center;
 	margin-bottom: 1.3rem;
 }
 /*post 10*/
-.last h1,.ninth h1,.eighth h1,.seventh h1,.sixth h1,.fifth h1,.fourth h1,.third h1,.second h1,.first h1{
+.last h2,.ninth h2,.eighth h2,.seventh h2,.sixth h2,.fifth h2,.fourth h2,.third h2,.second h2,.first h2{
 
 	margin-top: 10px;
 	margin-bottom: 10px;
@@ -90,7 +184,7 @@ text-align: center;
 /*disqus*/
 #disqus_thread{
 	
-	background-color: #be3e82;
+	background-color: #7EA3CC;
 	margin: 1rem auto;
 
 	margin-top: 3rem;
@@ -101,7 +195,7 @@ text-align: center;
 
 .other_posts{
 	
-color:#f7ccd7;
+color:#fcfeff;
 	
 	width:55%;
 	margin: 2rem auto;
@@ -118,7 +212,7 @@ color:#f7ccd7;
 .one,.two,.three {
 	color: inherit;
 	
-background-color: #f56476;
+background-color:  #009ddc;
 	padding: 10px 20px;
 	border-radius: 5px;
 }
@@ -136,7 +230,7 @@ background-color: #f56476;
 /*footer*/
 .footer{
 
-background-color: #f56476;
+background-color: #009ddc;
 color: #fcfeff;
 font-size: 20px;
 padding: 10px 0;
@@ -151,7 +245,7 @@ text-align: center;
 	color: #fcfeff;
 }
 .social a:hover{
-	color: #dfbbb1; 
+	color: #d5d8dc; 
 }
 
 
@@ -198,4 +292,20 @@ text-align: center;
 	.other_posts{
 		width:78%;
 	}
+}
+
+.brand{
+ display: none;
+}
+
+
+@media(max-width: 390px){
+
+  .brand{
+    display: inline;
+
+  }
+  .nav-brand{
+    display: none;
+  }
 }
