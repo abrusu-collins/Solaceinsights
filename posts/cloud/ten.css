@@ -1,0 +1,311 @@
+*{
+	margin:0;
+	padding: 0;
+
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+html{
+	background-color: #7EA3CC;
+
+}
+
+
+img{
+	width:100%;
+
+}
+
+/*tags*/
+/* navbar */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+.container {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.nav {
+background-color:#fcfeff ;
+  width: 100%;
+  height: 55px;
+  overflow: hidden;
+  transition: height .5s ease-in-out;
+  position: fixed;
+  top:0;
+
+}
+.nav-brand,.brand, .nav-link, .nav-collapse {
+  display: inline-block;
+}
+.nav-brand,.brand, .nav-link {
+ 
+
+  text-decoration: none;
+  line-height: 55px;
+  padding: 0 1rem;
+  opacity: 0.8;
+  cursor: pointer;
+}
+.nav-brand,.brand {
+  font-size: 1.25rem;
+   color:rgb(0, 102, 255); ;
+ font-family: 'Balsamiq Sans', cursive;
+}
+.nav-link {
+  font-size: 1rem;
+   color:#000000 ;
+}
+.nav-collapse {
+  float: right;
+}
+.toggler {
+  float: right;
+  width: 40px;
+  height: 18px;
+  margin: 18.5px 0;
+  background: none;
+  border: none;
+  outline: none;
+  display: none;
+  opacity: 0.8;
+}
+.toggler span {
+  display: block;
+  width: 90%;
+  height: 2px;
+  background:#868e96;
+  position: relative;
+  transition: .25s ease-in-out;
+}
+.toggler span:nth-child(1) {
+  top: -7.5px;
+}
+.toggler span:nth-child(2) {
+  top: 0;
+}
+.toggler span:nth-child(3) {
+  top: 7.5px;
+}
+
+.nav-brand:hover, .nav-link:hover, .toggler:hover, 
+.nav-brand:focus, .nav-link:focus, .toggler:focus {
+  opacity: 1;
+}
+
+.nav.open .toggler span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.nav.open .toggler span:nth-child(2) {
+  transform: translateX(-100%);
+  width: 0;
+  opacity: 0;
+}
+.nav.open .toggler span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+.nav.open {
+  height: 40vh;
+}
+
+@media (max-width: 767px) {
+  .nav-collapse, .nav-link {
+    float: none;
+    display: block;
+  }
+  .nav-link {
+    text-align: center;
+  }
+  .toggler {
+    display: block;
+  }
+}
+
+ nav.scrolled {
+  background: #fcfeff;
+  box-shadow: 0 1px 5px rgba(104,104,104,0.8);
+}
+
+/*end of navbar*/
+
+
+
+/*Post*/
+
+.post{
+	border: 1px solid rgba(213,216,220,.5);
+	padding: 20px;
+color:#fcfeff;
+	border-radius: 5px;
+	width:55%;
+	margin: 7rem auto;
+	margin-bottom: 3rem;
+}
+.post_body{
+	width:100%;
+}
+#post_head{
+	font-size: 1.7rem;
+	
+	margin-bottom: 10px;
+text-align: center;
+}
+.p1{
+	margin-bottom: 1.3rem;
+}
+/*post 10*/
+.last h2,.ninth h2,.eighth h2,.seventh h2,.sixth h2,.fifth h2,.fourth h2,.third h2,.second h2,.first h2{
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.last img,.ninth img,.eighth img,.seventh img,.sixth img,.fifth img,.fourth img,.third img,.second img,.first img{
+	padding-top: 30px;
+	padding-bottom: 30px;
+        width:100%;
+
+}
+.post a{
+	color:black;
+	text-decoration: none;
+}
+.post a:hover{
+	color:#1A5276;
+}
+.post p{
+	line-height: 1.4rem;
+}
+
+/*disqus*/
+#disqus_thread{
+	
+	background-color: #7EA3CC;
+	margin: 1rem auto;
+
+	margin-top: 3rem;
+}
+
+
+/*Other Posts*/
+
+.other_posts{
+	
+color:#fcfeff;
+	
+	width:55%;
+	margin: 2rem auto;
+}
+.in{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap: .5rem;
+	margin-top:1rem;
+}
+
+
+
+.one,.two,.three {
+	color: inherit;
+	
+background-color:  #009ddc;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+.one a,.two a,.three a{
+	color: black;
+	text-decoration: none;
+}
+
+.one a:hover,.two a:hover,.three a:hover{
+	color: #1A5276;
+	text-decoration: underline;
+}
+
+/*footer*/
+.footer{
+
+background-color: #009ddc;
+color: #fcfeff;
+font-size: 20px;
+padding: 10px 0;
+text-align: center;
+
+}
+.footer .social{
+ 
+	font-size: 30px;
+}
+.social a{
+	color: #fcfeff;
+}
+.social a:hover{
+	color: #d5d8dc; 
+}
+
+
+/*Media Queries*/
+@media(max-width:938px){
+	.post,.other_posts{
+
+		width:75%;
+	}
+}
+
+@media(max-width:774px){
+	.post,.other_posts{
+
+		width:85%;
+	}
+}
+
+@media(max-width:682px){
+	.post,.other_posts{
+
+		width:94%;
+	}
+}
+
+@media(max-width:618px){
+	.post{
+
+		width:97%;
+	}
+
+	.in{
+		display: flex;
+		flex-direction:column;
+		align-items: center;
+	}
+	.other_posts{
+		width:50%;
+	}
+}
+
+@media(max-width:542px){
+
+	.other_posts{
+		width:78%;
+	}
+}
+
+.brand{
+ display: none;
+}
+
+
+@media(max-width: 390px){
+
+  .brand{
+    display: inline;
+
+  }
+  .nav-brand{
+    display: none;
+  }
+}
