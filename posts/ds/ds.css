@@ -177,7 +177,9 @@ text-align: center;
 }
 
 
-
+.second img{
+  margin: 20px auto;
+}
 .second span{
 
 
@@ -214,7 +216,11 @@ color:#fcfeff;
 }
 
 
+.h1{
 
+margin:20px auto;
+
+}
 .one,.two,.three {
 	color: inherit;
 	

@@ -7,7 +7,7 @@
 
 html{
 	background-color: #7EA3CC;
-color: #fcfeff;
+
 }
 
 
@@ -137,7 +137,7 @@ background-color:#fcfeff ;
 
 /*Post*/
 
-.posts{
+.post{
 	border: 1px solid rgba(213,216,220,.5);
 	padding: 20px;
 color:#fcfeff;
@@ -145,7 +145,6 @@ color:#fcfeff;
 	width:55%;
 	margin: 7rem auto;
 	margin-bottom: 3rem;
- 
 }
 .post_body{
 	width:100%;
@@ -156,47 +155,42 @@ color:#fcfeff;
 	margin-bottom: 10px;
 text-align: center;
 }
-
-.sol{
-  margin:20px auto;
+.p1{
+	margin-bottom: 1.3rem;
 }
-.posts a{
+/*post 10*/
+.last h2,.ninth h2,.eighth h2,.seventh h2,.sixth h2,.fifth h2,.fourth h2,.third h2,.second h2,.first h2{
+
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.last img,.ninth img,.eighth img,.seventh img,.sixth img,.fifth img,.fourth img,.third img,.second img,.first img{
+	padding-top: 30px;
+	padding-bottom: 30px;
+        width:100%;
+
+}
+.post a{
 	color:black;
 	text-decoration: none;
 }
-.posts a:hover{
+.post a:hover{
 	color:#1A5276;
 }
-
-.posts h1{
-  margin-bottom: 25px;
+.post p{
+	line-height: 1.4rem;
 }
 
-.intro p{
-   margin-bottom: 25px;
+/*disqus*/
+#disqus_thread{
+	
+	background-color: #7EA3CC;
+	margin: 1rem auto;
+
+	margin-top: 3rem;
 }
 
 
-
-.second span{
-
-
-  font-weight: 700;
-  color:#000;
-}
-.second{
-  border-bottom: 1px solid rgba(213,216,220,.5);
-  padding:25px 0;
-}
-
- a{
-  text-decoration: none;
-  color:#000;
-}
-
-.p{
-  margin: 25px 0;
-}
 /*Other Posts*/
 
 .other_posts{
@@ -255,30 +249,30 @@ text-align: center;
 }
 
 
-/*Media Queries */
+/*Media Queries*/
 @media(max-width:938px){
-	.posts,.other_posts{
+	.post,.other_posts{
 
 		width:75%;
 	}
 }
 
 @media(max-width:774px){
-	.posts,.other_posts{
+	.post,.other_posts{
 
 		width:85%;
 	}
 }
 
 @media(max-width:682px){
-	.posts,.other_posts{
+	.post,.other_posts{
 
 		width:94%;
 	}
 }
 
 @media(max-width:618px){
-	.posts{
+	.post{
 
 		width:97%;
 	}
